@@ -40,8 +40,6 @@ ul,li {
   justify-content: center;
   background: #AEBCEE;
 }
-
-
 /* タブ */
 #tabs {
   display: flex;
@@ -73,7 +71,6 @@ ul,li {
 #tabContents .tabContent.display{
   display: none;
 }
-
 /* モーダル */
 #modal {
   position: relative;
