@@ -1,0 +1,146 @@
+ul,li {
+  list-style: none;
+  padding: 0;
+}
+#content {
+  max-width: 980px;
+  margin: 0 auto;
+}
+/* アコーディオン */
+#accordion {
+  width: 100%;
+  max-width: 980px;
+}
+#accordion .accordionMenuContent.display {
+  display: none;
+}
+#accordion .accordionMenuContent {
+  padding: 10px;
+}
+#accordion .accordionMenu{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  height: 50px;
+  background: #FCFCFC;
+  position: relative;
+}
+#accordion .accordionMenu::after{
+  content: "\f107";
+  font-family: FontAwesome;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+  background: #EEE;
+}
+
+
+/* タブ */
+#tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0;
+}
+#tabs .tab:first-child{
+  color: black;
+  background: white;
+  cursor: auto;
+}
+#tabs .tab {
+  padding: 10px 15px;
+  background: #AEBCEE;
+  color: white;
+  border-top: solid 1px #EEE;
+  border-right: solid 1px #EEE;
+  border-left: solid 1px #EEE;
+  cursor: pointer;
+}
+#tabContents {
+  max-width: 980px;
+  margin-top: 0;
+  padding: 20px;
+  background: #FFF;
+  border: solid 1px #EEE;
+  box-sizing: border-box;
+}
+#tabContents .tabContent.display{
+  display: none;
+}
+
+/* モーダル */
+#modal {
+  position: relative;
+}
+.modalArea {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.modalArea.display {
+  display: flex;
+}
+.modalArea .modalContent {
+  background: #FFF;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.modalArea .modalContent::after {
+  content: "×";
+  font-family: FontAwesome;
+  font-size: 35px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+#slide {
+  overflow: hidden;
+  width: 500px;
+  border: solid 1px #EEE;
+  margin: 20px 0;
+}
+#slide .slideContent{
+  display: flex;
+}
+#slide img {
+  width: 100%;
+}
+#lording {
+  max-width: 980px;
+}
+#lording img{
+  width: 200px;
+  opacity: 0;
+}
+#lording img.setAnimation{
+  animation-name: lording;
+  animation-duration: 2s;
+  opacity: 1 !important;
+}
+@keyframes lording{
+  from {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
