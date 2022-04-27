@@ -23,7 +23,7 @@ ul,li {
   margin: 10px 0;
   padding: 10px;
   height: 50px;
-  background: #FCFCFC;
+  background: #f5f7ff;
   position: relative;
 }
 #accordion .accordionMenu::after{
@@ -39,6 +39,7 @@ ul,li {
   align-items: center;
   justify-content: center;
   background: #AEBCEE;
+  color: white;
 }
 /* タブ */
 #tabs {
