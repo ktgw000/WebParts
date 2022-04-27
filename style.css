@@ -9,7 +9,7 @@ ul,li {
 /* アコーディオン */
 #accordion {
   width: 100%;
-  max-width: 980px;
+  max-width: 350px;
 }
 #accordion .accordionMenuContent.display {
   display: none;
@@ -62,7 +62,7 @@ ul,li {
   cursor: pointer;
 }
 #tabContents {
-  max-width: 980px;
+  max-width: 650px;
   margin-top: 0;
   padding: 20px;
   background: #FFF;
