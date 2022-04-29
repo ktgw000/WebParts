@@ -143,6 +143,7 @@ ul,li {
     transform: translateY(0%);
   }
 }
+/* ハンバーガーメニュー */
 #mobileArea {
   border: solid 1px #EEE;
   width: 400px;
