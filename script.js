@@ -120,5 +120,17 @@ window.addEventListener('scroll',() => {
     },800)
   }
 })
+// ハンバーガーメニュー
+const lineMenu = document.getElementById('lineMenu');
+const line = document.getElementsByClassName('line');
+const lineMenuContent = document.getElementById('lineMenuContent');
+
+lineMenu.addEventListener('click', () => {
+  for(let i = 0; i < line.length;  i ++) {
+    line[i].classList.toggle('transform');
+  }
+  lineMenuContent.classList.toggle('transform');
+
+})
 
 
