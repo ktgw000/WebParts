@@ -156,6 +156,7 @@ ul,li {
   top: 10px;
   right: 10px;
   z-index: 999;
+  cursor: pointer;
 }
 .line {
   position: relative;
